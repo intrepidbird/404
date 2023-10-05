@@ -3,9 +3,34 @@
 <head>
   <title>IntrepidBird</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles-light.css" id="stylesheet">
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body.light-mode {
+    background: white; /* Light mode background color */
+    color: black; /* Light mode text color */
+  }
+
+  body.dark-mode {
+    background: black; /* Dark mode background color */
+    color: white; /* Dark mode text color */
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  canvas {
+    border: 1px solid white;
+  }
+  </style>
 </head>
-<body>
+<body class="dark-mode">
 <canvas width="400" height="400" id="game"></canvas>
 <button id="modeToggle">Toggle Dark Mode</button>
 <script>
