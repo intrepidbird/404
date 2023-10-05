@@ -142,29 +142,41 @@ document.addEventListener('keydown', function(e) {
   // left won't do anything, and pressing right while moving left
   // shouldn't let you collide with your own body)
 
-  // left arrow key
+  // Left arrow key
   if (e.which === 37 && snake.dx === 0) {
     snake.dx = -grid;
     snake.dy = 0;
   }
-  // up arrow key
+  // Up arrow key
   else if (e.which === 38 && snake.dy === 0) {
     snake.dy = -grid;
     snake.dx = 0;
   }
-  // right arrow key
+  // Right arrow key
   else if (e.which === 39 && snake.dx === 0) {
     snake.dx = grid;
     snake.dy = 0;
   }
-  // down arrow key
+  // Down arrow key
   else if (e.which === 40 && snake.dy === 0) {
     snake.dy = grid;
     snake.dx = 0;
   }
 });
 
-// start the game
+function toggleMode() {
+  var stylesheet = document.getElementById('stylesheet');
+  if (stylesheet.getAttribute('href') === 'styles-light.css') {
+    stylesheet.setAttribute('href', 'styles-dark.css');
+  } else {
+    stylesheet.setAttribute('href', 'styles-light.css');
+  }
+}
+
+// Add an event listener to the button to toggle the mode
+document.getElementById('modeToggle').addEventListener('click', toggleMode);
+
+// Start the game
 requestAnimationFrame(loop);
 </script>
 </body>
