@@ -3,25 +3,11 @@
 <head>
   <title>IntrepidBird</title>
   <meta charset="UTF-8">
-  <style>
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-
-  body {
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  canvas {
-    border: 1px solid white;
-  }
-  </style>
+  <link rel="stylesheet" href="styles-light.css" id="stylesheet">
 </head>
 <body>
 <canvas width="400" height="400" id="game"></canvas>
+<button id="modeToggle">Toggle Dark Mode</button>
 <script>
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
