@@ -1,6 +1,6 @@
-# IntrepidBird Snake Game
+# IntrepidBird Website 404
 
 Easter Egg
 
-![image](https://github.com/intrepidbird/snake-game/assets/140008493/b792c765-eb63-4c07-8eda-1d4ba4aa16e0)
+Credits to https://gist.github.com/ZiKT1229/5935a10ce818ea7b851ea85ecf55b4da
 
